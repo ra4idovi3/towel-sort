@@ -1,8 +1,11 @@
+const matrix = [
+    ];
 
-// You should implement your task here.
 
-module.exports = function towelSort (matrix) {
-  if(matrix && matrix.length > 0){ 
+
+function towelSort (matrix) {
+    if( matrix.length == 0){return []}
+    console.log(matrix)
     let newArr = matrix;
     let arr = [];
     let str = '';
@@ -13,7 +16,6 @@ module.exports = function towelSort (matrix) {
     arr.push(newArr[i]);
     }
     str = arr.join(',');
-    return str.split(',').map(el => Number(el));
-  }
-  return [];
+    return console.log(str.split(',').map(el => Number(el)));
 }
+towelSort(matrix);
